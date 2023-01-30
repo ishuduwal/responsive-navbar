@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color:#000;
+    height: 100vh;
+    background-size: cover;
+}
+.navbar ul{
+    background-color:#353535;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    list-style-type: none;
+    font-size: 18px;
+    gap:40px;
+}
+.navbar li a{
+    text-decoration: none;
+    color: #fff;
+}
+@media(max-width:600px){
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar li{
+        text-align: center;
+    }
+    .navbar li a{
+        padding: 10px 5px;
+    }
+}
